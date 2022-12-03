@@ -1,38 +1,45 @@
 <template>
     <div class="section5">
-        <img src="../assets/img/h1-team-1a-700x700.jpg" alt="">
+        <div class="sec5img">
+            <img v-for='(elem,index) in Section5images' :key="index" :src="require(`../assets/img/${elem.path}`) " alt="">
+        </div>
     </div>
 </template>
 
 <script>
-     export default {
-        name:'Section5Comp',
-        components:{
+export default {
+    name: 'Section5Comp',
+    components: {
 
-        },
-        props:{
+    },
+    props: {
+        Section5images: Array
 
-        },
-        data(){
-            return{
+    },
+    data() {
+        return {
 
-            }
-        },
-        mounted(){
-
-        },
-        methods:{
-            
         }
+    },
+    mounted() {
+
+    },
+    methods: {
+
     }
+}
 </script>
 
 <style lang="scss" scoped>
 .section5 {
+    
     width: calc(100% / 4);
-    img{
+    .sec5img{
+        display:flex;
+        img{
         width: 100%;
+        }
     }
+    
 }
-
 </style>

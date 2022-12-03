@@ -7,8 +7,8 @@
     <Section2Comp />
     <Section3Comp />
     <Section4Comp />
-    <Section5Comp />
-    <Section6Comp />
+    <Section5Comp :Section5images="Section5images"/>
+    <Section6Comp :Section6Logos="Section6Logos" />
     <Section7Comp />
     <Section8Comp />
     <Section9Comp />
@@ -84,7 +84,7 @@ export default {
       },
     ],
     
-    // Jumbo Images
+    // Section1 images
 
     Section1images:[
       {
@@ -103,7 +103,56 @@ export default {
        name:'Big Pizza',
        path:'h3-img-4.jpg',  
       },
-    ]
+    ],
+
+    
+    //Section5 images
+
+    Section5images:[
+      {
+       name:'Boy1Team',
+       path:'h1-team-1a.jpg', 
+      },
+       {
+       name:'Girl1Team',
+       path:'h1-team-2a.jpg', 
+      },
+       {
+       name:'Girl2Team',
+       path:'h1-team-3a.jpg',  
+      },
+       {
+       name:'Boy2Team',
+       path:'h1-team-4a.jpg',  
+      },
+    ],
+
+    //Section 6 logos
+
+     Section6Logos:[
+      {
+       name:'BigCheese',
+       path:'h1-clients-img-1.png', 
+      },
+       {
+       name:'BludoosBar',
+       path:'h1-clients-img-2.png', 
+      },
+       {
+       name:'Gordon',
+       path:'h1-clients-img-3.png',  
+      },
+       {
+       name:'Cowboy',
+       path:'h1-clients-img-4.png',  
+      },
+      {
+       name:'Vegan',
+       path:'h1-clients-img-5.png',  
+      },
+    ],
+
+
 
     }
   },

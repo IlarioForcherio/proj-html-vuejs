@@ -1,40 +1,44 @@
 <template>
     <div class="section6">
-        <img src="../assets/img/h1-clients-img-3.png" alt="">
+        
+        <div class="sec6img">
+            <img v-for='(elem,index) in Section6Logos' :key="index" :src="require(`../assets/img/${elem.path}`) " alt="">
+        </div>
     </div>
 </template>
 
 <script>
-     export default {
-        name:'Sectio6Comp',
-        components:{
+export default {
+    name: 'Sectio6Comp',
+    components: {
 
-        },
-        props:{
+    },
+    props: {
+        Section6Logos: Array
+    },
+    data() {
+        return {
 
-        },
-        data(){
-            return{
-
-            }
-        },
-        mounted(){
-
-        },
-        methods:{
-            
         }
+    },
+    mounted() {
+
+    },
+    methods: {
+
     }
+}
 </script>
 
 <style lang="scss" scoped>
-
-
 .section6 {
+    padding:50px 40px;
     width: calc(100% / 4);
-    img{
-        width: 100%;
+    .sec6img {
+        display: flex;
+        img {
+            width: 100%;
+        }
     }
 }
-
 </style>
