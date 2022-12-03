@@ -1,6 +1,6 @@
 <template>
-    <div>
-section 5
+    <div class="section5">
+        <img src="../assets/img/h1-team-1a-700x700.jpg" alt="">
     </div>
 </template>
 
@@ -28,5 +28,11 @@ section 5
 </script>
 
 <style lang="scss" scoped>
+.section5 {
+    width: calc(100% / 4);
+    img{
+        width: 100%;
+    }
+}
 
 </style>
