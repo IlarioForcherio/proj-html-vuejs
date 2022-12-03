@@ -9,7 +9,7 @@
     <Section4Comp />
     <Section5Comp :Section5images="Section5images"/>
     <Section6Comp :Section6Logos="Section6Logos" />
-    <Section7Comp />
+    <Section7Comp :Section7images="Section7images" />
     <Section8Comp />
     <Section9Comp />
     <MainComp />
@@ -149,6 +149,59 @@ export default {
       {
        name:'Vegan',
        path:'h1-clients-img-5.png',  
+      },
+    ],
+
+      //Section 7 Images
+
+     Section7images:[
+      {
+       name:'BISMARK',
+       path:'h3-product-img-1a.png',
+       price:'$30,00',
+       discount:'',
+       discountBadge:true,
+       sold:false, 
+      },
+       {
+       name:'FIORI DI ZUCCA',
+       path:'h3-product-img-2a.png',
+       price:'$7,00-$50,00',
+       discount:'',
+       discountBadge:false,
+       sold:false,   
+      },
+       {
+       name:'VALDOSTANA',
+       path:'h3-product-img-3a.png',
+       price:'$55,00',
+       discount:'',
+       discountBadge:false,
+       sold:true,    
+      },
+       {
+       name:'PIZZA TARTUFATA',
+       path:'h3-product-img-4a.png',
+       price:'$45,00',
+       discount:'',
+       discountBadge:false,
+       sold:false,    
+      },
+      {
+       name:'FRANCESCANA',
+       path:'h3-product-img-5a.png',
+       price:'$25,00',
+       discount:'',
+       discountBadge:false,
+       sold:false,    
+      },
+       {
+       name:'CAMPAGNOLA',
+       path:'h3-product-img-6a.png',
+       price:'$50,00-$95,00',
+       discount:'',
+       discountBadge:false,
+       sold:false,    
       },
     ],
 
