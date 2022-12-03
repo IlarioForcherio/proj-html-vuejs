@@ -40,8 +40,13 @@ export default {
         display: flex;
 
          .sec8Text {
+            background-image: url('../assets/img/sky-1475274047050-1d0c0975c63e.jpeg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             flex-basis: 50%;
             h2 {
+                color: red;
                 text-align: center;
             }
         }
