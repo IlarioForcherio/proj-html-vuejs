@@ -1,7 +1,8 @@
 <template>
     <div class="section1">
-    
-     <img src="../assets/img/h3-img-1.jpg" alt="">
+     <div class="sec1Img">
+        <img v-for='(elem,index) in Section1images' :key="index" :src="require(`../assets/img/${elem.path}`) " alt="">
+     </div>
     </div>
 </template>
 
@@ -12,7 +13,7 @@
 
         },
         props:{
-
+        Section1images:Array
         },
         data(){
             return{
@@ -31,10 +32,15 @@
 <style lang="scss" scoped>
 
 .section1 {
+    
     width: calc(100% / 4);
-    img{
+    .sec1Img{
+        display:flex;
+        img{
         width: 100%;
     }
+    }
+    
 }
 
 </style>

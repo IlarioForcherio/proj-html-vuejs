@@ -3,7 +3,7 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     
     <HeaderComp :headerMenu='headerMenu' />
-    <Section1Comp />
+    <Section1Comp :Section1images='Section1images' />
     <Section2Comp />
     <Section3Comp />
     <Section4Comp />
@@ -86,22 +86,22 @@ export default {
     
     // Jumbo Images
 
-    jumboImages:[
+    Section1images:[
       {
        name:'Flyng birds',
-       image:'./assets/img/h3-img-1.jpg', 
+       path:'h3-img-1.jpg', 
       },
        {
        name:'Good Pizza',
-       image:'./assets/img/h3-img-2.jpg', 
+       path:'h3-img-2.jpg', 
       },
        {
        name:'Elvis',
-       image:'./assets/img/h3-img-3.jpg',  
+       path:'h3-img-3.jpg',  
       },
        {
        name:'Big Pizza',
-       image:'./assets/img/h3-img-4.jpg',  
+       path:'h3-img-4.jpg',  
       },
     ]
 

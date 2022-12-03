@@ -80,12 +80,12 @@
        padding-top:40px; 
        display:flex;
        align-items: center;
-       justify-content: center;
+       justify-content: space-around;
         width: 90%;
         margin:0 auto;
         
         button{
-            padding:15px 40px;
+            padding:10px 20px;
             font-size: 0.9rem;
             cursor: pointer;
         }
