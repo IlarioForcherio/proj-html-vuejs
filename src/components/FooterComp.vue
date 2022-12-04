@@ -98,7 +98,7 @@ export default {
             }
         }
         .footerImg {
-            height: 90vh;
+            
             flex-basis: 50%;
             background-image: url('../assets/img/footer-img-1.jpg');
             background-position: center;

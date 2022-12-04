@@ -5,12 +5,12 @@
     <HeaderComp   :headerMenu='headerMenu' />
     <Section1Comp :Section1images='Section1images' />
     <Section2Comp />
-    <Section3Comp />
+    <Section3Comp :Section3Specials="Section3Specials" />
     <Section4Comp />
     <Section5Comp :Section5images="Section5images"/>
     <Section6Comp :Section6Logos="Section6Logos" />
     <Section7Comp :Section7images="Section7images" />
-    <Section8Comp />
+    <Section8Comp :Section8Events="Section8Events"/>
     <Section9Comp />
     <MainComp />
     <FooterComp  :Restaurants="Restaurants" :OpeningDay="OpeningDay" />
@@ -55,7 +55,7 @@ export default {
   data(){
     return{
     
-    //Header Menu 
+    //HEADER MENU
     
     headerMenu:[
       {
@@ -84,7 +84,7 @@ export default {
       },
     ],
     
-    // Section1 images
+    // SECTION1 IMAGES
 
     Section1images:[
       {
@@ -105,8 +105,28 @@ export default {
       },
     ],
 
+    //SECTION 3 SPECIALS
+
+    Section3Specials:[
+      {
+        price:'10',
+        name:'COMBO PICCOLO',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut aliquam dui.',
+      },
+            {
+        price:'20',
+        name:'COMBO MEZZO',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut aliquam dui.',
+      },
+            {
+        price:'20',
+        name:'COMBO GRANDE',
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut aliquam dui.',
+      }
+    ],
+
     
-    //Section5 images
+    //SECTION 5 IMAGES
 
     Section5images:[
       {
@@ -127,7 +147,7 @@ export default {
       },
     ],
 
-    //Section 6 Logos
+    //SECTION 6 LOGO'S
 
      Section6Logos:[
       {
@@ -152,7 +172,7 @@ export default {
       },
     ],
 
-      //Section 7 Images
+      //SECTION7 IMAGES
 
      Section7images:[
       {
@@ -211,9 +231,30 @@ export default {
       },
     ],
 
-    //Section 8 Events
+    //SECTION8 EVENTS-CARD
 
-    //Footer Restaurant
+    Section8Events:[
+      {
+        day:'02',
+        month:'NOV',
+        title:'TRADITIONAL NEAPOLITAN PIES IN KYOTO PIAZZA MERCATO',
+        geoTag:' 204 E. Pizzetta Tommaso'
+      },
+      {
+        day:'03',
+        month:'NOV',
+        title:'SPACE OPENING THIS WEEKEND',
+        geoTag:' 204 E. Pizzetta Tommaso'
+      },
+      {
+        day:'05',
+        month:'NOV',
+        title:'SIENNA PRIVATE DINING ROOM WITH STÈPHANE BRUNN',
+        geoTag:' 204 E. Pizzetta Tommaso'
+      }
+    ],
+
+    //FOOTER RESTAURANT
 
     Restaurants:[
       {
@@ -245,7 +286,7 @@ export default {
       
     
 
-    //Footer Opening day
+    //FOOTER OPENING DAY
 
     OpeningDay:[
       {
@@ -300,10 +341,6 @@ export default {
 
     ]
 
-    
-
-
-
     }
   },
   mounted(){
@@ -330,11 +367,15 @@ a{
   text-decoration: none;
 }
 
+li{
+   list-style-type: none;
+}
+
 
 
 #app {
-
-  font-family: 'Oswald', sans-serif;;
+ 
+  font-family: 'Oswald', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
