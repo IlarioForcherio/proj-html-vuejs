@@ -2,7 +2,7 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     
-    <HeaderComp :headerMenu='headerMenu' />
+    <HeaderComp   :headerMenu='headerMenu' />
     <Section1Comp :Section1images='Section1images' />
     <Section2Comp />
     <Section3Comp />
@@ -21,7 +21,7 @@
 
 <script>
 
-import HeaderComp from './components/HeaderComp.vue'
+import HeaderComp from   './components/HeaderComp.vue'
 import Section1Comp from './components/Section1Comp.vue'
 import Section2Comp from './components/Section2Comp.vue'
 import Section3Comp from './components/Section3Comp.vue'
@@ -127,7 +127,7 @@ export default {
       },
     ],
 
-    //Section 6 logos
+    //Section 6 Logos
 
      Section6Logos:[
       {
@@ -210,6 +210,97 @@ export default {
        sold:false,    
       },
     ],
+
+    //Section 8 Events
+
+    //Footer Restaurant
+
+    Restaurants:[
+      {
+        street:'1614 E. Bell Rd #104.',
+        city:'Salerno',
+        zipcode:'AZ 85022',
+        pnumber:'(602) 867-1010',
+      },
+      {
+        street:'204 E. Pizzetta Tommaso',
+        city:'Sorrento',
+        zipcode:'AZ 85022',
+        pnumber:'(358) 867-1010',
+      },
+      {
+        street:'Vale Puglia 54',
+        city:'Torre Del Greco AZ',
+        zipcode:'85022',
+        pnumber:'(359) 867-1010',
+      },
+      {
+        street:'Corso Itali AA',
+        city:'Naples',
+        zipcode:'AZ 85022',
+        pnumber:'(989) 867-1010',
+      },
+    ],
+      
+      
+    
+
+    //Footer Opening day
+
+    OpeningDay:[
+      {
+        day:'MONDAY',
+        opening:'',
+        closing:'',
+        KitchenClosed:true,
+
+      },
+       {
+        day:'TUSEDAY',
+        opening:'9.00',
+        closing:'22.00',
+        KitchenClosed:true,
+        
+      },
+       {
+        day:'WEDNESDAY',
+        opening:'9.00',
+        closing:'22.00',
+        KitchenClosed:true,
+        
+      },
+       {
+        day:'THURSDAY',
+        opening:'9.00',
+        closing:'22.00',
+        KitchenClosed:true,
+        
+      },
+       {
+        day:'FRIDAY',
+        opening:'9.00',
+        closing:'22.00',
+        KitchenClosed:true,
+        
+      },
+       {
+        day:'SATURDAY',
+        opening:'11.00',
+        closing:'24.00',
+        KitchenClosed:true,
+        
+      },
+       {
+        day:'SUNDAY',
+        opening:'9.00',
+        closing:'22.00',
+        KitchenClosed:true,
+        
+      },
+
+    ]
+
+    
 
 
 

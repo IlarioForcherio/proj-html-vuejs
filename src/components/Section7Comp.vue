@@ -13,7 +13,11 @@
                 <div v-if="elem.sold"  class="sold">SOLD</div>
               </div>
                 <div>{{elem.name}}</div>
-                <div>${{elem.price}}<span v-if="elem.discountBadge" > ${{discountPrice(elem)}}</span></div>
+                <div class="price">
+                <div :class="(elem.discountBadge == true ) ?  'priceGrey' : 'priceRed'">${{elem.price}}</div>
+                <div class="priceRed" v-if="elem.discountBadge" >${{discountPrice(elem)}}</div>   
+                </div>
+
             </div>
         </div>
     </div>
@@ -38,8 +42,8 @@ export default {
     },
     methods: {
     discountPrice(pizza){
-        console.log(parseInt(pizza.price))
-        console.log(parseInt(pizza.discount))
+        //console.log(parseInt(pizza.price))
+        //console.log(parseInt(pizza.discount))
         let discountedPrice =  parseInt(pizza.price) - (parseInt(pizza.price) * parseInt(pizza.discount) / 100 ) 
         console.log(discountedPrice)
         return discountedPrice
@@ -66,6 +70,19 @@ export default {
        padding: 50px 0px;
         display: flex;
         text-align: center;
+
+        .price{
+         display: flex;
+         justify-content: center;   
+        .priceRed{
+            color: red;
+        }
+        .priceGrey{
+            color: grey;
+            text-decoration: line-through;
+        }   
+        }
+
         .sec7Content{
            width: calc(100% / 6);
           img {

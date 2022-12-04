@@ -20,14 +20,17 @@
         <div class="header-img">
             <img src="../assets/img/h3-rev-img-5.png" alt="">
         </div>
+        
     </div>
 </template>
 
 <script>
+
+
     export default {
         name:'HeaderComp',
         components:{
-
+        
         },
         props:{
         headerMenu:Array
