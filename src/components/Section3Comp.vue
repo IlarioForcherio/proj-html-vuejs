@@ -8,13 +8,13 @@
                 <ul>
                     <li>
                         <div class="specials">SPECIALS*</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut.</p> 
+                        <p class="specialsDescription" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut.</p> 
                     </li>
                     <li v-for="elem,index in  Section3Specials" :key="index" class="comboCard">
-                        <div class="comboItem" >${{elem.price}}</div>
+                        <div class="comboPrice" >${{elem.price}}</div>
                         <div>
-                           <div>{{elem.name}}</div>
-                           <p>{{elem.description}}</p>
+                           <div class="comboName">{{elem.name}}</div>
+                           <p class="comboDescription">{{elem.description}}</p>
                         </div>
                     </li>
                 </ul> 
@@ -74,14 +74,29 @@
             justify-content: center;
             .specials{
                 font-weight: bold;
-                font-size: 2rem;
-                
+                font-size: 2rem;   
+            }
+            .specialsDescription{
+                font-size: 1.2rem;
+                color:rgba(134, 134, 134, 1) ;
             }
             .comboCard{
                 display: flex;
                 padding-top: 30px;
-                .comboItem{
+                .comboName{
+                    letter-spacing: 3px;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+                .comboPrice{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #ab4027;
                     padding-right: 20px;
+                }
+                .comboDescription{
+                    color:rgba(134, 134, 134, 1) ;
+                    
                 }
                
             }   

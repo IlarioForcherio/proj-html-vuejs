@@ -5,10 +5,10 @@
                 <div>
                     <ul>
                         <li>
-                            <h4>FIND OUR RESTAURANT</h4>
+                            <h3>FIND OUR RESTAURANT</h3>
                         </li>
                         <li v-for="ele,ind in Restaurants" :key="ind">
-                            <a href="#">
+                            <a class="restaurantAddress"  href="#">
                                 <div>{{ele.street}}</div>
                                 <div>{{ele.city}}</div>
                                 <div>{{ele.zipcode}}</div>
@@ -19,11 +19,11 @@
                 </div>
                 <div>
                     <ul>
-                        <li><h4>WORKING HOURS</h4></li>
+                        <li><h3>WORKING HOURS</h3></li>
                         <li v-for="elem,ind in OpeningDay" :key="ind">
                             <a href="#">
-                              <div>{{elem.day}}</div>
-                              <div v-if="elem.KitchenClosed" >Kitchen Closed</div>
+                              <div class="openingDay" >{{elem.day}}</div>
+                              <div class="closed" v-if="elem.KitchenClosed" >Kitchen Closed</div>
                               <div v-else>{{elem.opening}} - {{elem.closing}}</div>
                             </a>
                         </li>
@@ -84,18 +84,33 @@ export default {
                 font-family: 'Oswald', sans-serif;
                 color: white;
             }
-            h4 {
-                color: red;
+            h3 {
+                font-size: 1.8rem;
+                inline-size: 150px;
+                overflow-wrap: break-word;
+                color:#b8903c;
             }
             ul {
+
                  padding: 50px 0px;
                 li {
                     padding: 10px 0;
+
                     a {
+                        
                         color: white;
+                        .openingDay{
+                        color:rgba(184, 144, 60, 1) ;
+                        }
+                        .closed{
+                            font-weight: bold;
+                            font-family: 'Open Sans', sans-serif;
+                            color: #AA381E;
+                        }
                     }
                 }
             }
+           
         }
         .footerImg {
             

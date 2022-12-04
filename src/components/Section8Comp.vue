@@ -4,7 +4,7 @@
             <div class="sec8Text">
                 <!-- card -->
                  <ul>
-                    <li>made whith love</li>
+                    <li class="love" >MADE WITH LOVE</li>
                     <li class="cardTitle" > DELISH PIZZA DEALS </li>
                     <li v-for="element,index in Section8Events" :key='index' class="eventCard">
                         <div class="left" >
@@ -13,7 +13,7 @@
                         </div>
                         <div>
                             <div class="eventTitle" >{{element.title}}</div>
-                            <div>{{element.geoTag}}</div>
+                            <div class="eventGeoTag">{{element.geoTag}}</div>
                         </div>
                     </li>
                  </ul>
@@ -61,9 +61,15 @@ export default {
             background-size: cover;
             flex-basis: 50%;
             ul{
-                    .cardTitle{
-                    font-size: 2rem;
+                .love{
                     font-weight: bold;
+                    color: #ab4027;
+                    font-size: 0.8rem;
+                    letter-spacing: 3px;
+                }
+                .cardTitle{
+                font-size: 2rem;
+                font-weight: bold;
                 }
                 li{
                 color: white;
@@ -74,18 +80,23 @@ export default {
                 display: flex;
                 align-items: center;
                 color: white;
-                border-bottom: 1px dotted white;
+                border-bottom: 3px dotted #b8903c;
                 .left{
                     padding-right: 20px;
                 }
                 .eventDay{
-                    font-size: 2rem;
+                    color: #ab4027;
+                    font-size: 3rem;
                     font-weight: bold;
 
                 }
                 .eventTitle{
                     font-size: 1.2rem;
                     font-weight: bold;
+                }
+                .eventGeoTag{
+                    font-size: 0.9rem;
+                    color:  #ab4027;
                 }
                 
                 }
