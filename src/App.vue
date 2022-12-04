@@ -13,7 +13,7 @@
     <Section8Comp />
     <Section9Comp />
     <MainComp />
-    <FooterComp />
+    <FooterComp  :Restaurants="Restaurants" :OpeningDay="OpeningDay" />
 
    
   </div>
@@ -259,42 +259,42 @@ export default {
         day:'TUSEDAY',
         opening:'9.00',
         closing:'22.00',
-        KitchenClosed:true,
+        KitchenClosed:false,
         
       },
        {
         day:'WEDNESDAY',
         opening:'9.00',
         closing:'22.00',
-        KitchenClosed:true,
+        KitchenClosed:false,
         
       },
        {
         day:'THURSDAY',
         opening:'9.00',
         closing:'22.00',
-        KitchenClosed:true,
+        KitchenClosed:false,
         
       },
        {
         day:'FRIDAY',
         opening:'9.00',
         closing:'22.00',
-        KitchenClosed:true,
+        KitchenClosed:false,
         
       },
        {
         day:'SATURDAY',
         opening:'11.00',
         closing:'24.00',
-        KitchenClosed:true,
+        KitchenClosed:false,
         
       },
        {
         day:'SUNDAY',
         opening:'9.00',
         closing:'22.00',
-        KitchenClosed:true,
+        KitchenClosed:false,
         
       },
 
@@ -326,10 +326,15 @@ export default {
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+
+  font-family: 'Oswald', sans-serif;;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
