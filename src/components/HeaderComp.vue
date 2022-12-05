@@ -1,6 +1,7 @@
 <template>
     <div class="header">
         <!-- navbar -->
+          <NavbarComp />
         <nav>
             <div>
                 <button>ORDER ONLINE</button>
@@ -24,6 +25,7 @@
                 <a href="">SEARCH</a> 
             </div>
         </nav>
+       
 
         <!-- img-text-timing -->
         <div class="header-img">
@@ -34,10 +36,13 @@
 </template>
 
 <script>
+
+import NavbarComp from   '../components/NavbarComp.vue'
+
 export default {
     name: 'HeaderComp',
     components: {
-
+     NavbarComp,
     },
     props: {
         headerMenu: Array

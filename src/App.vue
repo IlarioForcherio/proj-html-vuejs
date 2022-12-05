@@ -3,6 +3,7 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     
     <HeaderComp   :headerMenu='headerMenu' />
+   
     <Section1Comp :Section1images='Section1images' />
     <!-- <Section2Comp v-for="elem,ind in Section2Review " :key="ind"  :Section2Review="elem" /> -->
     <Section2Comp  :Section2Review="Section2Review" />
@@ -23,6 +24,7 @@
 <script>
 
 import HeaderComp from   './components/HeaderComp.vue'
+
 import Section1Comp from './components/Section1Comp.vue'
 import Section2Comp from './components/Section2Comp.vue'
 import Section3Comp from './components/Section3Comp.vue'
@@ -41,6 +43,7 @@ export default {
   name: 'App',
   components: {
     HeaderComp,
+   
     Section1Comp,
     Section2Comp,
     Section3Comp,
