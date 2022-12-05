@@ -64,17 +64,19 @@ export default {
 <style lang="scss" scoped>
 .whiteBg {
     background-color: white;
+   
 }
 
 .section9 {
     margin: 10px 0px;
-    padding: 120px 100px;
+    padding-top: 70px;
     background-image: url('../assets/img/h3-background-img-3.jpg');
     height: 30vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     .sec9Booking {
+        
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -82,17 +84,18 @@ export default {
             font-size: 0.6rem;
             font-weight: bold;
             letter-spacing: 3px;
-            padding:10px 20px;
+            padding:20px 30px;
             color: white;
             background-color: #377421;
-            border: 0px;
+            border: 1px solid black;
         }
         select,input{
-            width:100px;
-            height: 25px;
+            padding: 15px 30px;
+            font-size: 1rem;
+            width:190px;
             background-color: rgb(249, 159, 4);
             color: rgb(255, 255, 255);
-            border: 0px;
+            border: 1px solid black;
             
         }
 

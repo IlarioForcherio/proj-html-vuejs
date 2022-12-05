@@ -3,6 +3,7 @@
       <div class="section2-text">
        <div class="quote" ><font-awesome-icon icon="fa-solid fa-quote-left" /></div>
        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eveniet incidunt sed excepturi</h1> 
+       <div class="author">author</div>
       </div>
       
 
@@ -49,10 +50,11 @@
              font-size: 4rem;
         }
 
-       h1{
+       h1,.author{
        
         text-align: center;
-    } 
+       }
+      
     } 
     
 }

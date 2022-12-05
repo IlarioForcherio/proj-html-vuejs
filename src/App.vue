@@ -105,6 +105,24 @@ export default {
       },
     ],
 
+    //SECTION2 REVIEW
+
+    Section2Review:[
+      {
+       review:'',
+       author:'', 
+      },
+            {
+       review:'',
+       author:'', 
+      },
+            {
+       review:'',
+       author:'', 
+      },
+    ],
+
+
     //SECTION 3 SPECIALS
 
     Section3Specials:[

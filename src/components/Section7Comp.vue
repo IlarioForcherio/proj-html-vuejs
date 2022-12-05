@@ -9,12 +9,12 @@
             <div v-for='(elem,index) in Section7images' :key="index"  class="sec7Content">
               <div class="pizza">
                 <img :src="require(`../assets/img/${elem.path}`) " alt="">
-                <div v-if="elem.discountBadge"  class="discount"> {{elem.discount}}%</div>
-                <div v-if="elem.sold"  class="sold">SOLD</div>
+                <div  v-if="elem.discountBadge"  class="discount"> {{elem.discount}}%</div>
+                <div  v-if="elem.sold"  class="sold">SOLD</div>
               </div>
                 <div>{{elem.name}}</div>
                 <div class="price">
-                <div :class="(elem.discountBadge == true ) ?  'priceGrey' : 'priceRed'">${{elem.price}}</div>
+                <div :class="(elem.discountBadge == true | elem.sold == true ) ?  'priceGrey' : 'priceRed'">${{elem.price}}</div>
                 <div class="priceRed" v-if="elem.discountBadge" >${{discountPrice(elem)}}</div>   
                 </div>
 
@@ -45,12 +45,8 @@ export default {
         //console.log(parseInt(pizza.price))
         //console.log(parseInt(pizza.discount))
         let discountedPrice =  parseInt(pizza.price) - (parseInt(pizza.price) * parseInt(pizza.discount) / 100 ) 
-        console.log(discountedPrice)
-        return discountedPrice
-    
-       
-      
-      
+        //console.log(discountedPrice)
+        return discountedPrice 
     }
     }
 }
