@@ -1,8 +1,11 @@
 <template>
     <div class="section1">
-     <div class="sec1img">
-        <img v-for='(elem,index) in Section1images' :key="index" :src="require(`../assets/img/${elem.path}`) " alt="">
-     </div>
+     
+        <div  v-for='(elem,index) in Section1images' :key="index"  class="sec1img">
+          <img :src="require(`../assets/img/${elem.path}`) " alt="">  
+        </div>
+
+  
     </div>
 </template>
 
@@ -32,14 +35,37 @@
 <style lang="scss" scoped>
 
 .section1 {
-    
-    width: calc(100% / 4);
+    position: relative;
+    display: flex;
+    height: 30vh;
+     
     .sec1img{
-        display:flex;
-        img{
+         width: calc(100% / 4); 
+        display: flex;
+        background-image: url('../assets/img/hover-img.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 200%;
+      img{
         width: 100%;
+      }     
+    }
+    .hover{
+        
+        img{
+            position:absolute;
+            bottom: 0px;
+            width: 101%;
         }
     }
+
+
+
+.sec1img img:hover{
+    display: none;
+}
+
+
     
 }
 

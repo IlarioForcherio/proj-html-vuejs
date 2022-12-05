@@ -14,10 +14,9 @@
               </div>
                 <div>{{elem.name}}</div>
                 <div class="price">
-                <div :class="(elem.discountBadge == true | elem.sold == true ) ?  'priceGrey' : 'priceRed'">${{elem.price}}</div>
-                <div class="priceRed" v-if="elem.discountBadge" >${{discountPrice(elem)}}</div>   
+                <div  :class="(elem.discountBadge == true | elem.sold == true ) ?  'priceGrey' : 'priceRed'">${{elem.from}} ${{elem.to}}</div>
+                <div class="priceRed" v-if="elem.discountBadge" >${{discountPriceFrom(elem)}} ${{discountPriceTo(elem)}}</div>   
                 </div>
-
             </div>
         </div>
     </div>
@@ -41,13 +40,17 @@ export default {
     //this.discountPrice()
     },
     methods: {
-    discountPrice(pizza){
-        //console.log(parseInt(pizza.price))
-        //console.log(parseInt(pizza.discount))
-        let discountedPrice =  parseInt(pizza.price) - (parseInt(pizza.price) * parseInt(pizza.discount) / 100 ) 
-        //console.log(discountedPrice)
-        return discountedPrice 
-    }
+    discountPriceFrom(pizza){
+        let discountedPriceFrom =  parseInt(pizza.from) - (parseInt(pizza.from) * parseInt(pizza.discount) / 100 ) 
+        return discountedPriceFrom 
+       },
+
+    discountPriceTo(pizza){
+        let discountedPriceTo =  parseInt(pizza.to) - (parseInt(pizza.to) * parseInt(pizza.discount) / 100 ) 
+        return discountedPriceTo 
+        }
+
+
     }
 }
 </script>

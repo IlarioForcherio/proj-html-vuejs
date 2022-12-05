@@ -4,7 +4,8 @@
     
     <HeaderComp   :headerMenu='headerMenu' />
     <Section1Comp :Section1images='Section1images' />
-    <Section2Comp />
+    <!-- <Section2Comp v-for="elem,ind in Section2Review " :key="ind"  :Section2Review="elem" /> -->
+    <Section2Comp  :Section2Review="Section2Review" />
     <Section3Comp :Section3Specials="Section3Specials" />
     <Section4Comp />
     <Section5Comp :Section5images="Section5images"/>
@@ -61,26 +62,32 @@ export default {
       {
         name:'HOME',
         link:'/',
+        
       },
       {
        name:'PAGES',
-       link:'/PAGES', 
+       link:'/PAGES',
+       
       },
       {
         name:'MENU',
-        link:'/MENU', 
+        link:'/MENU',
+         
       },
       {
         name:'EVENT',
-        link:'/EVENT', 
+        link:'/EVENT',
+         
       },
       {
        name:'BLOG',
-       link:'/BLOG',  
+       link:'/BLOG',
+         
       },
       {
         name:'LANDING',
-        link:'/LANDING', 
+        link:'/LANDING',
+         
       },
     ],
     
@@ -109,16 +116,16 @@ export default {
 
     Section2Review:[
       {
-       review:'',
-       author:'', 
+       review:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eveniet incidunt sed excepturi',
+       author:'WASHINTON POST', 
       },
             {
-       review:'',
-       author:'', 
+       review:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eveniet incidunt sed excepturi',
+       author:'NEW YORK TIMES', 
       },
             {
-       review:'',
-       author:'', 
+       review:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eveniet incidunt sed excepturi',
+       author:'WALL STREET JOURNAL', 
       },
     ],
 
@@ -196,7 +203,8 @@ export default {
       {
        name:'BISMARK',
        path:'h3-product-img-1a.png',
-       price:'30,00',
+       from:'30,00',
+       to:'',
        discount:'14',
        discountedPrice:'',
        discountBadge:true,
@@ -205,7 +213,8 @@ export default {
        {
        name:'FIORI DI ZUCCA',
        path:'h3-product-img-2a.png',
-       price:'7,00-50,00',
+       from:'7,00',
+       to:'50,00',
        discount:'',
        discountedPrice:'',
        discountBadge:false,
@@ -214,7 +223,9 @@ export default {
        {
        name:'VALDOSTANA',
        path:'h3-product-img-3a.png',
-       price:'55,00',
+       from:'55,00',
+       to:'0',
+       
        discount:'',
        discountedPrice:'',
        discountBadge:false,
@@ -223,7 +234,8 @@ export default {
        {
        name:'PIZZA TARTUFATA',
        path:'h3-product-img-4a.png',
-       price:'45,00',
+       from:'45,00',
+       to:'0',
        discount:'',
        discountedPrice:'',
        discountBadge:false,
@@ -232,7 +244,8 @@ export default {
       {
        name:'FRANCESCANA',
        path:'h3-product-img-5a.png',
-       price:'25,00',
+       from:'25,00',
+       to:'0',
        discount:'',
        discountedPrice:'',
        discountBadge:false,
@@ -241,7 +254,8 @@ export default {
        {
        name:'CAMPAGNOLA',
        path:'h3-product-img-6a.png',
-       price:'50,00-95,00',
+       from:'50,00',
+       to:'95,00',
        discount:'',
        discountedPrice:'',
        discountBadge:false,
