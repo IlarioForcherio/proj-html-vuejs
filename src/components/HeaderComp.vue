@@ -24,20 +24,7 @@
                 <a href="">SEARCH</a> 
             </div>
         </nav>
-        <!-- hover menu -->
-        <!-- <div class="hoverMenu">
-            <ul>
-            
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div> -->
+
         <!-- img-text-timing -->
         <div class="header-img">
             <div class="pizzaTag" ><img src="../assets/img/h3-rev-img-5.png" alt=""></div>
@@ -83,18 +70,6 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/utility.scss";
 
-// .d-block{
-// display: block;
-// }
-// .d-none{
-// display:none
-// }
-// .red{
-//     color: red;
-// }
-// .blue{
-//     color: blue;
-// }
 
 // .flex{
 //     display: flex;

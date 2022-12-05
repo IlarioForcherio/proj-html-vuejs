@@ -1,19 +1,24 @@
 <template>
     <div class="section5">
-        <div class="sec5img">
-            <img v-for='(elem,index) in Section5images' :key="index" :src="require(`../assets/img/${elem.path}`) " alt="">
-        </div>
+    
+    <Section5CardComp 
+    v-for="elem,ind in Section5Team" 
+    :key='ind' :Section5Team="elem"  /> 
+
+        
     </div>
 </template>
 
 <script>
+import Section5CardComp from   '../components/Section5CardComp.vue'
 export default {
     name: 'Section5Comp',
     components: {
+        Section5CardComp,
 
     },
     props: {
-        Section5images: Array
+        Section5Team:Array
 
     },
     data() {
@@ -32,14 +37,10 @@ export default {
 
 <style lang="scss" scoped>
 .section5 {
-    
-    width: calc(100% / 4);
-    .sec5img{
-        display:flex;
-        img{
-        width: 100%;
-        }
-    }
+   display: flex;
+  
     
 }
+    
+
 </style>

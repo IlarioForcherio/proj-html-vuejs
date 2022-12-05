@@ -62,6 +62,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+p{
+    color: white;
+}
 .whiteBg {
     background-color: white;
    
@@ -69,9 +73,10 @@ export default {
 
 .section9 {
     margin: 10px 0px;
-    padding-top: 70px;
+    padding-top: 80px;
+
     background-image: url('../assets/img/h3-background-img-3.jpg');
-    height: 30vh;
+    height: 35vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

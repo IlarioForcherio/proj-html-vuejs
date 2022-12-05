@@ -40,7 +40,7 @@
     height: 30vh;
      
     .sec1img{
-         width: calc(100% / 4); 
+        width: calc(100% / 4); 
         display: flex;
         background-image: url('../assets/img/hover-img.jpg');
         background-position: center;

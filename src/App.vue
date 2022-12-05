@@ -8,7 +8,7 @@
     <Section2Comp  :Section2Review="Section2Review" />
     <Section3Comp :Section3Specials="Section3Specials" />
     <Section4Comp />
-    <Section5Comp :Section5images="Section5images"/>
+    <Section5Comp   :Section5Team="Section5Team"/>
     <Section6Comp :Section6Logos="Section6Logos" />
     <Section7Comp :Section7images="Section7images" />
     <Section8Comp :Section8Events="Section8Events"/>
@@ -62,31 +62,37 @@ export default {
       {
         name:'HOME',
         link:'/',
+        dropdown:[],
         
       },
       {
        name:'PAGES',
        link:'/PAGES',
+       dropdown:[],
        
       },
       {
         name:'MENU',
         link:'/MENU',
+        dropdown:[],
          
       },
       {
         name:'EVENT',
         link:'/EVENT',
+        dropdown:[],
          
       },
       {
        name:'BLOG',
        link:'/BLOG',
+       dropdown:[],
          
       },
       {
         name:'LANDING',
         link:'/LANDING',
+        dropdown:[],
          
       },
     ],
@@ -153,22 +159,33 @@ export default {
     
     //SECTION 5 IMAGES
 
-    Section5images:[
+    Section5Team:[
       {
-       name:'Boy1Team',
-       path:'h1-team-1a.jpg', 
+       name:'PETER ANDERSON',
+       role:'Head Chef',
+       path:'h1-team-1a.jpg',
+       contacts:['insta','twitter','fb'],
       },
        {
-       name:'Girl1Team',
-       path:'h1-team-2a.jpg', 
+       name:'SHARON HAYES',
+       role:'Executive Chef',
+       path:'h1-team-2a.jpg',
+       contacts:['insta','twitter','fb'],
+       
       },
        {
-       name:'Girl2Team',
-       path:'h1-team-3a.jpg',  
+       name:'FRANK BAILEY',
+       role:'Kitchen Porter',
+       path:'h1-team-3a.jpg',
+       contacts:['insta','twitter','fb'],
+        
       },
        {
-       name:'Boy2Team',
-       path:'h1-team-4a.jpg',  
+       name:'CAROL SIMPSON',
+       role:'Sous Chef',
+       path:'h1-team-4a.jpg',
+       contacts:['insta','twitter','fb'],
+       
       },
     ],
 
