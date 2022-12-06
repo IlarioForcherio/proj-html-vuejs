@@ -55,7 +55,7 @@ export default {
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: url('../assets/img/sky-1475274047050-1d0c0975c63e.jpeg');
+            background-image: url('https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h3-rev-bckgrnd-ing.jpg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;

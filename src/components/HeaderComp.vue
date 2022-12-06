@@ -11,6 +11,11 @@
 </template>
 <script>
 
+
+
+
+
+
 import NavbarComp from   '../components/NavbarComp.vue'
 
 export default {
@@ -52,7 +57,7 @@ export default {
     
     color: white;
     padding-bottom: 100px;
-    background-image: url('../assets/img/sky-1475274047050-1d0c0975c63e.jpeg');
+    background-image: url('https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h3-rev-bckgrnd-ing.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

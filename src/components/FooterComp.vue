@@ -24,14 +24,15 @@
                             <a href="#">
                               <div class="openingDay" >{{elem.day}}</div>
                               <div class="closed" v-if="elem.KitchenClosed" >Kitchen Closed</div>
-                              <div v-else>{{elem.opening}} - {{elem.closing}}</div>
+                              <div class="openingClosing"  v-else>{{elem.opening}} - {{elem.closing}}</div>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div>
                 <h2>THE DON PEPPE CREW FIRST AND FOREMOST VALUES AN AUTHENTIC, WELL BAKED SLICE OF PIZZA.</h2>
-                </div>
+                <img src="../assets/img/footer-bottom-img.png" alt=""></div>
+                
             </div>
             <div class="footerImg">
     
@@ -66,21 +67,29 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
+    color: white;
     .footerContent {
         display: flex;
         
         .footerText {
             display: flex;
             justify-content: space-around;
-            background-image: url('../assets/img/sky-1475274047050-1d0c0975c63e.jpeg');
+            background-image: url('https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h3-rev-bckgrnd-ing.jpg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             flex-basis: 50%;
+            .restaurantAddress{
+                font-size: 0.9rem;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                color: #b2b2b2;
+            }
             h2{
                 inline-size: 140px;
                 overflow-wrap: break-word;
-                padding: 100px 0 ;
+                padding: 65px 0 ;
+                padding-bottom: 150px;
                 font-family: 'Oswald', sans-serif;
                 color: white;
             }
@@ -91,7 +100,6 @@ export default {
                 color:#b8903c;
             }
             ul {
-
                  padding: 50px 0px;
                 li {
                     padding: 10px 0;
@@ -106,6 +114,11 @@ export default {
                             font-weight: bold;
                             font-family: 'Open Sans', sans-serif;
                             color: #AA381E;
+                        }
+                        .openingClosing{
+                            font-weight: bold;
+                            font-family: 'Open Sans', sans-serif;
+                            color:  #b2b2b2;
                         }
                     }
                 }
