@@ -7,14 +7,14 @@
             <!-- voci menu -->
             <div class="menu">
                 <img class="mustacheSvg" src="../assets/svg/svg-0.svg" alt="">
-                <ul v-for="(elem,ind) in firstMenu" :key="ind">
+                <ul v-for="(elem,ind) in firstMenu" :key="ind + 'a'">
                     <li><a href="#">{{ elem.name }} </a></li>
-                   <li class="dropdown" v-for="element,n in elem.dropdown " :key="n" >{{element}}</li>
+                   <li class="dropdown" v-for="element,n in elem.dropdown " :key="n + 'b'"  >{{element}}</li>
                 </ul>
                 <img src="../assets/img/h5-logo-divided-header.png" alt="">
-                <ul v-for="(elem,index) in secondMenu" :key="index">
+                <ul v-for="(elem,index) in secondMenu" :key="index + 'c'">
                     <li><a href="#">{{ elem.name }} </a></li>
-                    <li class="dropdown" v-for="element,x in elem.dropdown " :key="x" >{{element}}</li>
+                    <li class="dropdown" v-for="element,x in elem.dropdown " :key="x + 'd'" >{{element}}</li>
                 </ul>
             </div>
             <!-- cart-search -->

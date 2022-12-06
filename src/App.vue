@@ -5,7 +5,7 @@
     <HeaderComp   :headerMenu='headerMenu' />
     <Section1Comp :Section1images='Section1images' />
     <!-- <Section2Comp v-for="elem,ind in Section2Review " :key="ind"  :Section2Review="elem" /> -->
-    <Section2Comp :Section2Review="headerMenu" />
+    <Section2Comp :Section2Review="Section2Review" />
     <Section3Comp :Section3Specials="Section3Specials" />
     <Section4Comp />
     <Section5Comp :Section5Team="Section5Team"/>

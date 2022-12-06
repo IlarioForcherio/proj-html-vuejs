@@ -1,18 +1,25 @@
 <template>
     <div class="section2">
+  <div @click="scorriImmagineLeft()" >LEFT</div>
         <div class="section2-text">
             <div class="quote">
                 <font-awesome-icon icon="fa-solid fa-quote-left" />
-                 <font-awesome-icon icon="fa-brands fa-facebook" />
-                 <font-awesome-icon icon="fa-brands fa-twitter" />
-                 <font-awesome-icon icon="fa-brands fa-instagram" />
             </div>
-            <div class="section2card"> 
+            <!-- <div class="section2card"> 
                 <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nemo veritatis quibusdam, minima eum placeat debitis sunt libero qui perferendis </h1>
                 <div class="author">WASHINTON POST 2018</div>
+            </div> -->
+            <!-- <div v-for="elem,index in Section2Review" :key="index" class="section2card">  -->
+            
+            <div class="section2card">     
+                <h1>{{Section2Review[dinamicIndex].review}}</h1>
+                <div class="author">{{Section2Review[dinamicIndex].author}}</div>
             </div>
-           
+            <div class="dotSlider" >
+                <div v-for="element,index in Section2Review" :key="index" @click="dotSlider(index)" class="dotSlider">0</div>
+            </div>
         </div>
+          <div @click="scorriImmagineRight()">RIGHT</div>
     </div>
 </template>
 
@@ -36,26 +43,45 @@ export default {
     },
     methods: {
 
-        // sliderLeft(ind){
-        //     console.log(ind)
-        //     this.dinamicIndex = 2;
-        //     //console.log(this.dinamicIndex)
-        // }
+
+     scorriImmagineRight: function () {
+
+      if (this.dinamicIndex < this.Section2Review.length - 1) {
+        this.dinamicIndex++;
+      } else {
+        this.dinamicIndex = 0;
+      }
+    },
+     
+
+
+    scorriImmagineLeft: function () {
+
+      if (this.dinamicIndex < this.Section2Review.length ) {
+        this.dinamicIndex--;
+      }
+      if(this.dinamicIndex <= -1){
+        this.dinamicIndex = this.Section2Review.length - 1;
+      }
+
       
-      
-    //   scorriImmagineDx: function () {
-    //   if (this.dinamicIndex < this.Section2Review.length - 1) {
-    //     this.dinamicIndex++;
-    //   } else {
-    //     this.dinamicIndex = 0;
-    //   }
-    // },
+    },
+
+      dotSlider: function(index){
+     this.dinamicIndex = index;
+    },
+
+
 
     }
 }
 </script>
 
 <style lang="scss" scoped>
+
+
+
+
 .section2 {
     //height: 60vh;
     padding-bottom: 30px;
@@ -63,6 +89,8 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
     .section2-text {
         //display: flex;
         width: 60%;
@@ -84,6 +112,17 @@ export default {
             font-family: 'Oswald', sans-serif;
             color:#D2401E ;
         }
+    }
+
+    .dotSlider{
+
+
+        display: flex;
+        justify-content: center;
+
+
+
+
     }
 }
 </style>
