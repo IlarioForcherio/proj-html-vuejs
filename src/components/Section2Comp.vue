@@ -1,15 +1,14 @@
 <template>
     <div class="section2">
         <div class="section2-text">
-            <!-- <div class="quote">
+            <div class="quote">
                 <font-awesome-icon icon="fa-solid fa-quote-left" />
-            </div> -->
-         
-            <div v-for="element,ind in Section2Review" :key="ind" class="section2card">
-                <h1>{{element.review}}</h1>
-                <div class="author">{{element.author}}</div>
             </div>
-          
+            <div class="section2card"> 
+                <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nemo veritatis quibusdam, minima eum placeat debitis sunt libero qui perferendis </h1>
+                <div class="author">WASHINTON POST 2018</div>
+            </div>
+           
         </div>
     </div>
 </template>
@@ -33,6 +32,12 @@ export default {
 
     },
     methods: {
+
+        // sliderLeft(ind){
+        //     console.log(ind)
+        //     this.dinamicIndex = 2;
+        //     //console.log(this.dinamicIndex)
+        // }
       
       
     //   scorriImmagineDx: function () {
@@ -49,13 +54,14 @@ export default {
 
 <style lang="scss" scoped>
 .section2 {
-    height: 60vh;
+    //height: 60vh;
+    padding-bottom: 30px;
     background-image: url('../assets/img/h3-testimonials-bckgrnd.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     .section2-text {
-        display: flex;
+        //display: flex;
         width: 60%;
         margin: 0 auto;
         .quote {
@@ -64,7 +70,16 @@ export default {
         }
         h1,
         .author {
+            
             text-align: center;
+        }
+
+        .author{
+            font-size: 0.8rem;
+            letter-spacing:3px ;
+            padding: 10px 0px;
+            font-family: 'Oswald', sans-serif;
+            color:#D2401E ;
         }
     }
 }

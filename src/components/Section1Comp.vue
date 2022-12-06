@@ -37,7 +37,7 @@
 .section1 {
     position: relative;
     display: flex;
-    height: 30vh;
+    
      
     .sec1img{
         width: calc(100% / 4); 
@@ -48,6 +48,7 @@
         background-size: 200%;
       img{
         width: 100%;
+        object-fit: contain;
       }     
     }
     .hover{

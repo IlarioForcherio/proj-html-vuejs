@@ -48,14 +48,14 @@
 .sec5Card{
     width: calc(100% / 4);
   .card{
-        border: 1px solid black;
+        border: 1px solid rgb(12, 12, 12);
         position: relative;
         .content{
         text-align: center;
         color: white;
         background-color: #d2401e;
         margin: 40px;
-        padding: 50px 0px;
+        padding: 55px 0px;
         h5{
             font-family: 'Open Sans', sans-serif;
         }
@@ -64,11 +64,9 @@
     
         .img{
             position: absolute;
-            
             top: 0px;
-
             img{
-            width: 100%;
+            width: 101%;
             
             }
             //display: none;
