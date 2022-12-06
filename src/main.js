@@ -8,17 +8,19 @@ import App from './App.vue'
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
   /* import specific icons */
-  import { faUserSecret,faQuoteLeft,faMagnifyingGlass, } from '@fortawesome/free-solid-svg-icons'
+  import { faUserSecret,faQuoteLeft,faMagnifyingGlass,faCircle } from '@fortawesome/free-solid-svg-icons'
   /*Import icone regular */
-  import { faFaceSmile } from '@fortawesome/free-regular-svg-icons'
+  import { faFaceSmile, } from '@fortawesome/free-regular-svg-icons'
   import { faFacebook,faTwitter,faInstagram } from '@fortawesome/free-brands-svg-icons'
 
   /* add icons to the library */
-  library.add(faUserSecret,faFaceSmile,faQuoteLeft,faMagnifyingGlass,faFacebook,faTwitter,faInstagram)
+  library.add(faUserSecret,faFaceSmile,faQuoteLeft,faMagnifyingGlass,faFacebook,faTwitter,faInstagram,faCircle)
  
 //  <font-awesome-icon icon="fa-brands fa-facebook" />
 /* <font-awesome-icon icon="fa-brands fa-twitter" /> */
 //<font-awesome-icon icon="fa-brands fa-instagram" />
+/* <font-awesome-icon icon="fa-regular fa-circle" /> */
+{/* <font-awesome-icon icon="fa-solid fa-circle" /> */}
  
 
 // https://github.com/sylar9696/live-coding-cl-77/tree/main/37-vue-cli-axios

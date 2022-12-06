@@ -123,16 +123,16 @@ export default {
 
     Section2Review:[
       {
-       review:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eveniet incidunt sed excepturi',
+       review:'FORGET THE TRENDY PIZZA SHOP, THIS HIDDEN SPOT MAKE THE BEST NEW-YORK STYLE PIZZA SLICE IN NAPLES',
        author:'WASHINTON POST', 
       },
             {
-       review:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eveniet incidunt sed excepturi',
+       review:'THE ATTENTION TO EVEN THE SMALLEST DETAILS MAKES THIS PRODUCT ONE OF THE BEST ON MARKET',
        author:'NEW YORK TIMES', 
       },
-            {
-       review:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eveniet incidunt sed excepturi',
-       author:'WALL STREET JOURNAL', 
+      {
+       review:"AS SOON AS YOU ENTER PEPPE'S, THE FEELING IS UNMISTAKABLE. YOU FEEL AT HOME IMMEDIATELY.'",
+       author:'DAILY NEWS', 
       },
     ],
 

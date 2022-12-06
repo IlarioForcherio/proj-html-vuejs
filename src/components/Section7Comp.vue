@@ -5,6 +5,7 @@
             <h2>THE BEST PIZZA MENU IN TOWN</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae cupiditate mollitia</p>
         </div>
+      
         <div  class="sec7Card">
             <div v-for='(elem,index) in Section7images' :key="index"  class="sec7Content">
               <div class="pizza">
@@ -19,6 +20,7 @@
                 </div>
             </div>
         </div>
+       
     </div>
 </template>
 
@@ -33,11 +35,13 @@ export default {
     },
     data() {
         return {
-        
+        dinamicIndex:0,
         }
     },
     mounted() {
     //this.discountPrice()
+
+    this.attivaIntervallo();
     },
     methods: {
     discountPriceFrom(pizza){
@@ -48,14 +52,38 @@ export default {
     discountPriceTo(pizza){
         let discountedPriceTo =  parseInt(pizza.to) - (parseInt(pizza.to) * parseInt(pizza.discount) / 100 ) 
         return discountedPriceTo 
-        }
+        },
+
+
+
+     scorriImmagineRight: function () {
+
+        // this.dinamicIndex = Section7images[index]
+
+      if (this.dinamicIndex < this.Section7images.length - 1) {
+        this.dinamicIndex++;
+      } else {
+        this.dinamicIndex = 0;
+      }
+    },
+     
+
+           attivaIntervallo: function(){
+     setInterval( () => { this.scorriImmagineLeft() },2000 );
+    },
+
 
 
     }
 }
 </script>
 
+
 <style lang="scss" scoped>
+
+ //<img :src="require(`../assets/img/${elem.path}`) " alt="">
+
+
 .section7 {
     .sec7Text {
       padding: 50px 0px;
@@ -106,12 +134,12 @@ export default {
 
            .discount{
            top: 10px;
-           background-color: red;
+           background-color:#fca324;
            }
            .sold{
             right: 0px;
             top: 10px;
-            background-color:brown;
+            background-color:#d2401e;
 
            }
            }
