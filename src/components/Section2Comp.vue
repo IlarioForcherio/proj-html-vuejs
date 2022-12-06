@@ -3,6 +3,9 @@
         <div class="section2-text">
             <div class="quote">
                 <font-awesome-icon icon="fa-solid fa-quote-left" />
+                 <font-awesome-icon icon="fa-brands fa-facebook" />
+                 <font-awesome-icon icon="fa-brands fa-twitter" />
+                 <font-awesome-icon icon="fa-brands fa-instagram" />
             </div>
             <div class="section2card"> 
                 <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nemo veritatis quibusdam, minima eum placeat debitis sunt libero qui perferendis </h1>

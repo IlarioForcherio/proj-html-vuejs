@@ -4,9 +4,9 @@
        <div class="card">
         <div class="content">
            <ul>
-            <li><h2>{{Section5Team.name}}</h2></li>
-            <li><h5>{{Section5Team.role}}</h5></li>
-            <li  v-for="ele,ind in Section5Team.contacts" :key="ind" >{{ele}}</li>
+            <li class="teamName">{{Section5Team.name}}</li>
+            <li class="teamRole"><h5>{{Section5Team.role}}</h5></li>
+            <li class="teamContacts" v-for="ele,ind in Section5Team.contacts" :key="ind" ><font-awesome-icon :icon="ele" /></li>
            </ul>
         </div>
         <div class="img">
@@ -55,7 +55,19 @@
         color: white;
         background-color: #d2401e;
         margin: 40px;
-        padding: 55px 0px;
+        padding: 83px 0px;
+        .teamName{
+        font-size: 1.5rem;
+        font-weight: bold;
+        
+
+        }
+
+        li{
+            line-height: 20px;
+            padding: 0px 10px;
+            display: inline;
+        }
         h5{
             font-family: 'Open Sans', sans-serif;
         }

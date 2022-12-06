@@ -165,27 +165,27 @@ export default {
        name:'PETER ANDERSON',
        role:'Head Chef',
        path:'h1-team-1a.jpg',
-       contacts:['insta','twitter','fb'],
+       contacts:["fa-brands fa-instagram",'fa-brands fa-twitter','fa-brands fa-facebook'],
       },
        {
        name:'SHARON HAYES',
        role:'Executive Chef',
        path:'h1-team-2a.jpg',
-       contacts:['insta','twitter','fb'],
+       contacts:["fa-brands fa-instagram",'fa-brands fa-twitter','fa-brands fa-facebook'],
        
       },
        {
        name:'FRANK BAILEY',
        role:'Kitchen Porter',
        path:'h1-team-3a.jpg',
-       contacts:['insta','twitter','fb'],
+       contacts:["fa-brands fa-instagram",'fa-brands fa-twitter','fa-brands fa-facebook'],
         
       },
        {
        name:'CAROL SIMPSON',
        role:'Sous Chef',
        path:'h1-team-4a.jpg',
-       contacts:['insta','twitter','fb'],
+      contacts:["fa-brands fa-instagram",'fa-brands fa-twitter','fa-brands fa-facebook'],
        
       },
     ],
