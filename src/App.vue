@@ -63,7 +63,7 @@ export default {
       {
         name:'HOME',
         link:'/',
-        dropdown:['1','2','3','4'],
+        dropdown:['ciaociao','weiwei','3','4'],
         
       },
       {

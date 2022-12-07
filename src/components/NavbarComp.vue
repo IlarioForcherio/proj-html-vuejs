@@ -7,14 +7,17 @@
             <!-- voci menu -->
             <div class="menu">
                 <img class="mustacheSvg" src="../assets/svg/svg-0.svg" alt="">
-                <ul v-for="(elem,ind) in firstMenu" :key="ind + 'a'">
-                    <li><a href="#">{{ elem.name }} </a></li>
-                   <li class="dropdown" v-for="element,n in elem.dropdown " :key="n + 'b'"  >{{element}}</li>
-                </ul>
+                     <ul  v-for="(elem,index) in firstMenu" :key="index + 'a'" >
+                        <li><a href="#">{{ elem.name }} </a></li>
+                            <li class="dropdown" v-for="element,n in elem.dropdown " :key="n + 'b'">
+                                {{element}}
+                            </li>
+                            <!-- <li class="dropdown" v-for="element,n in elem.dropdown " :key="n + 'b'"  >{{element}}</li> -->
+                        </ul>
                 <img src="../assets/img/h5-logo-divided-header.png" alt="">
                 <ul v-for="(elem,index) in secondMenu" :key="index + 'c'">
                     <li><a href="#">{{ elem.name }} </a></li>
-                    <li class="dropdown" v-for="element,x in elem.dropdown " :key="x + 'd'" >{{element}}</li>
+                    <li class="dropdown" v-for="element,x in elem.dropdown " :key="x + 'd'">{{element}}</li>
                 </ul>
             </div>
             <!-- cart-search -->
@@ -54,7 +57,7 @@ export default {
             this.firstMenu = this.headerMenu.slice(0, 3)
             //console.log(this.firstMenu)
             this.secondMenu = this.headerMenu.slice(3)
-            //console.log(this.secondMenu)
+            //console.log(this.secondMenu) 
             //console.log(this.isHovering)
 
         }
@@ -63,10 +66,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
-
-.flex{
+.flex {
     display: flex;
 }
 
@@ -108,16 +108,15 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
+        //position: relative;
         ul {
-            position: relative;
-            //margin-top: 100px;
-            padding: 0px 20px;
-            //padding-top: 100px;
-            li {
-              
-                color: rgb(0, 4, 255);
-                //display: inline;
 
+            position: relative; //margin-top: 100px;
+            padding: 0px 20px; //padding-top: 100px;
+            li {
+                //color: rgb(0, 4, 255);
+                //display: inline;
+               
                 a {
                     font-size: 0.8rem;
                     word-spacing: 10px;
@@ -127,25 +126,18 @@ nav {
                     text-decoration: none; //border-bottom:1px solid white;
                     text-align: center;
                 }
-
             }
-
+        } //HOVER
+        .dropdown {
+            position: absolute;
+             //top: 60px;
+            display: none;
+            color: red;
+            width: 100px;
         }
-         
-       //HOVER
-
-       .dropdown{
-        position: absolute;
-        z-index:2;
-        //top: 0px;
-        display: none;
-        
-       }
-        
-         ul:hover  .dropdown{
-            display: block;
-         }
-
+        ul:hover .dropdown {
+            display: inline-block;
+        }
         .mustacheSvg {
             filter: invert(100%);
             width: 25px;

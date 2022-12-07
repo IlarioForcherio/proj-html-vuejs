@@ -89,7 +89,7 @@ export default {
                 inline-size: 140px;
                 overflow-wrap: break-word;
                 padding: 65px 0 ;
-                padding-bottom: 150px;
+                padding-bottom: 100px;
                 font-family: 'Oswald', sans-serif;
                 color: white;
             }
