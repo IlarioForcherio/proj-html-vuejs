@@ -41,7 +41,7 @@ export default {
     };
   },
   mounted() {
-    //this.attivaIntervallo();
+    this.attivaIntervallo();
   },
   methods: {
     scorriImmagineRight: function () {
@@ -82,7 +82,7 @@ export default {
   height: 90vh;
   .fixedSvg {
     position: fixed;
-    z-index: 3;
+    z-index: 1;
     right: 0;
     display: flex;
     align-items: end;
@@ -105,15 +105,17 @@ export default {
     }
   }
   .header-img {
+    height: 50vh;
     display: flex;
     justify-content: space-around;
     position: relative;
     padding-top: 30px;
     .pizzaTag {
+    object-fit: contain;
       display: flex;
       justify-content: center;
       img {
-        width: 85%;
+        width: 100%;
       }
     }
     .pizzaSlice {
