@@ -2,7 +2,7 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     
-    <HeaderComp   :headerMenu='headerMenu' />
+    <HeaderComp   :headerMenu='headerMenu' :headerImages="headerImages" />
     <Section1Comp :Section1images='Section1images' />
     <!-- <Section2Comp v-for="elem,ind in Section2Review " :key="ind"  :Section2Review="elem" /> -->
     <Section2Comp :Section2Review="Section2Review" />
@@ -96,6 +96,32 @@ export default {
         dropdown:['1','2','3','4'],
          
       },
+    ],
+
+
+    //HEADER IMAGES
+
+    headerImages:[
+      {
+
+        name:'Pizza-Crust',
+        pizzaPath:'h3-rev-img-2.png',
+        tagPath:'h3-rev-img-1.png',
+        
+      },
+
+      {
+        name:'Pizza-Taste',
+        pizzaPath:'h3-rev-img-4.png',
+        tagPath:'h3-rev-img-3.png'
+      },
+
+      {
+        name:'Pizza-Urban',
+        pizzaPath:'h3-rev-img-6.png',
+        tagPath:'h3-rev-img-5.png',
+      },
+
     ],
     
     // SECTION1 IMAGES

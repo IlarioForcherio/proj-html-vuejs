@@ -107,7 +107,7 @@ nav {
         //height: 10vh;
         display: flex;
         align-items: center;
-       // justify-content: center;
+        justify-content: center;
         ul {
             position: relative;
             //margin-top: 100px;
@@ -119,6 +119,7 @@ nav {
                 //display: inline;
 
                 a {
+                    font-size: 0.8rem;
                     word-spacing: 10px;
                     letter-spacing: 5px;
                     font-weight: bold;

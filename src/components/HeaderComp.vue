@@ -1,40 +1,71 @@
 <template>
     <div class="header">
         <!-- navbar -->
-          <NavbarComp  :headerMenu="headerMenu"/>
+        <NavbarComp :headerMenu="headerMenu" />
         <!-- img-text-timing -->
+    
         <div class="header-img">
-            <div class="pizzaTag" ><img src="../assets/img/h3-rev-img-5.png" alt=""></div>
-            <div class="pizzaSlice"><img src="../assets/img/h3-rev-img-4.png" alt=""></div>
+            <!-- <div>left</div> -->
+            <div class="pizzaTag"><img :src="require(`../assets/img/${headerImages[dinamicIndex].tagPath}`) " alt=""></div>
+            <div class="pizzaSlice"><img :src="require(`../assets/img/${headerImages[dinamicIndex].pizzaPath}`) " alt=""></div>
+            <!-- <div @click="scorriImmagineRight()">right</div> -->
         </div>
+       
     </div>
 </template>
+
 <script>
-
-
-
-
-
-
-import NavbarComp from   '../components/NavbarComp.vue'
+import NavbarComp from '../components/NavbarComp.vue'
 
 export default {
     name: 'HeaderComp',
     components: {
-     NavbarComp,
+        NavbarComp,
     },
     props: {
-        headerMenu: Array
+        headerMenu: Array,
+        headerImages: Array
     },
     data() {
         return {
 
+            dinamicIndex: 0,
+
         }
     },
     mounted() {
+        this.attivaIntervallo();
        
     },
     methods: {
+
+
+
+
+        scorriImmagineRight: function() {
+
+            if (this.dinamicIndex < this.headerImages.length - 1) {
+                this.dinamicIndex++;
+            } else {
+                this.dinamicIndex = 0;
+            }
+           
+        },
+
+        scorriImmagineLeft: function() {
+
+            if (this.dinamicIndex < this.headerImages.length) {
+                this.dinamicIndex--;
+            }
+            if (this.dinamicIndex <= -1) {
+                this.dinamicIndex = this.headerImages.length - 1;
+            }
+        },
+
+
+        attivaIntervallo: function() {
+            setInterval(() => { this.scorriImmagineLeft() }, 2000);
+        },
 
     }
 }
@@ -42,48 +73,34 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/style/utility.scss";
-
-
-
-
-//  <div class="dropdown" :class="(isHovering) ? 'blue' : 'red'">menu</div>  
-//  @mouseover="isHovering=true" @mouseout="isHovering=false"
-
-
-
-
-
 .header {
-    
     color: white;
     padding-bottom: 100px;
     background-image: url('https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h3-rev-bckgrnd-ing.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-
+    height: 90vh;
     .header-img {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         position: relative;
-
-        .pizzaTag{
+        padding-top: 10px;
+        .pizzaTag {
             display: flex;
             justify-content: center;
-
+            img {
+                width: 85%;
+            }
         }
-
-        .pizzaSlice{
+        .pizzaSlice {
             display: flex;
             justify-content: center;
             position: absolute;
         }
         img {
-            width: 80%;
+            width: 70%;
         }
     }
-
-
 }
 </style>

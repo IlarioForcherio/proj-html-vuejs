@@ -41,7 +41,7 @@ export default {
     mounted() {
     //this.discountPrice()
 
-    this.attivaIntervallo();
+    //this.attivaIntervallo();
     },
     methods: {
     discountPriceFrom(pizza){
@@ -56,21 +56,21 @@ export default {
 
 
 
-     scorriImmagineRight: function () {
+    //  scorriImmagineRight: function () {
 
-        // this.dinamicIndex = Section7images[index]
+    //     // this.dinamicIndex = Section7images[index]
 
-      if (this.dinamicIndex < this.Section7images.length - 1) {
-        this.dinamicIndex++;
-      } else {
-        this.dinamicIndex = 0;
-      }
-    },
+    //   if (this.dinamicIndex < this.Section7images.length - 1) {
+    //     this.dinamicIndex++;
+    //   } else {
+    //     this.dinamicIndex = 0;
+    //   }
+    // },
      
 
-           attivaIntervallo: function(){
-     setInterval( () => { this.scorriImmagineLeft() },2000 );
-    },
+    //        attivaIntervallo: function(){
+    //  setInterval( () => { this.scorriImmagineLeft() },2000 );
+    // },
 
 
 

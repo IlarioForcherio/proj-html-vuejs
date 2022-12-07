@@ -75,8 +75,6 @@ export default {
       if(this.dinamicIndex <= -1){
         this.dinamicIndex = this.Section2Review.length - 1;
       }
-
-      
     },
 
       dotSlider: function(index){
