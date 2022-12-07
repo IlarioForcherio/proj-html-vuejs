@@ -136,7 +136,7 @@ nav {
             width: 100px;
         }
         ul:hover .dropdown {
-            display: inline-block;
+            display: none;
         }
         .mustacheSvg {
             filter: invert(100%);
