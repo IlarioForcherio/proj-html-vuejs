@@ -103,8 +103,6 @@ export default {
 
 .section2 {
 
-   
-
     .left,.right{
     padding:10px;
     background-color: white;

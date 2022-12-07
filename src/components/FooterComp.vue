@@ -102,7 +102,7 @@ export default {
             ul {
                  padding: 50px 0px;
                 li {
-                    padding: 10px 0;
+                    padding:5px 0;
 
                     a {
                         

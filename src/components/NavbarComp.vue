@@ -71,7 +71,7 @@ export default {
 }
 
 nav {
-    //height: 30vh;
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;

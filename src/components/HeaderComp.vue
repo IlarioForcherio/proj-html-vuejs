@@ -35,7 +35,6 @@ export default {
     },
     mounted() {
         this.attivaIntervallo();
-       
     },
     methods: {
 
@@ -75,7 +74,7 @@ export default {
 @import "../assets/style/utility.scss";
 .header {
     color: white;
-    padding-bottom: 100px;
+    padding-top: 0px;
     background-image: url('https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h3-rev-bckgrnd-ing.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -85,7 +84,7 @@ export default {
         display: flex;
         justify-content: space-around;
         position: relative;
-        padding-top: 10px;
+        padding-top: 30px;
         .pizzaTag {
             display: flex;
             justify-content: center;
